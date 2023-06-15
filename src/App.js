@@ -5,12 +5,21 @@ import MinMax from './components/MinMax'
 //import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 //import Primeiro from './components/Primeiro'
 
+import Aleatorio from './components/Aleatorio'
+
 
 export default () => (
     <View style={style.App}>
-        <MinMax min={3} max={20} />
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        <Aleatorio min={1} max={60}/>
+        
+        {/*<MinMax min={3} max={20} />
+        <Aleatorio/>
         <MinMax min={1} max={94} />
-        {/*<CompPadrao/> 
+        <CompPadrao/> 
         <Comp1/>
         <Comp2/>
         <Primeiro /> */}
