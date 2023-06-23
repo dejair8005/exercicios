@@ -1,7 +1,14 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
-import ContadorV2 from './components/contador/ContadorV2'
+
+import ListaProdutos from './components/produtos/ListaProdutos'
+//import UsuarioLogado from './components/UsuarioLogado'
+//import Familia from './components/relacao/Familia'
+//import Membro from './components/relacao/Membro'
+//import ParImpar from './components/ParImpar'
+//import Diferenciar from './components/Diferenciar'
+//import ContadorV2 from './components/contador/ContadorV2'
 //import Pai from './components/indireta/Pai'
 //import Pai from './components/direta/Pai'
 //import Contador from './components/Contador'
@@ -14,11 +21,29 @@ import ContadorV2 from './components/contador/ContadorV2'
 
 
 export default () => (
-    <View style={style.App}>
-                
-        <ContadorV2 />
-
+    <SafeAreaView style={style.App}>
+        <ListaProdutos/>                
+        
         {/*
+        <UsuarioLogado  usuario={{nome: 'Gui', email:'gui@gui.com'}}/>
+        <UsuarioLogado  usuario={{nome: 'Ana'}}/>
+        <UsuarioLogado  usuario={{nome: 'carlos@empresa.com'}}/>
+        <UsuarioLogado  usuario={null}/>
+        <UsuarioLogado  usuario={{}}/>
+        <Familia>
+            <Membro nome="Bia" sobrenome="Arruda" />
+            <Membro nome="Carlos" sobrenome="Arruda" />
+        </Familia>
+
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Julia" sobrenome="Silva" />
+            <Membro nome="Gui" sobrenome="Silva" />
+            <Membro nome="Rebeca" sobrenome="Silva" />
+        </Familia>
+        <ParImpar num={3} />
+        <Diferenciar/>
+        <ContadorV2 />
         <Pai />
         <Pai/>
         <Contador inicial={100} passo={13}/>
@@ -38,7 +63,7 @@ export default () => (
         <Comp1/>
         <Comp2/>
         <Primeiro /> */}
-    </View>
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
